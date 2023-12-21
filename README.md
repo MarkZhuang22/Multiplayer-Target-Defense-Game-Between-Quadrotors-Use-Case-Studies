@@ -6,44 +6,44 @@ This repository contains the Python and MATLAB simulation code for a Target Defe
 
 ```plaintext
 Thesis-research
-│   README.md
-│   .DS_Store    
-│
+│   README.md                            - Main documentation file explaining the repository content.
+│   .DS_Store                            - macOS folder settings file, usually hidden in the directory.
+
 └───Figure
-│   │   OptimalTrajectories.png
-│   │   barrier.png
-│   │   barrier_sector.png
-│   │   opttraj.png
-│   │   traj_D_win.png
-│   │   traj_D_win_sector.png
-│   │   traj_I_win.png
-│   │   traj_I_win_sector.png
-│   
+│   │   OptimalTrajectories.png          - Shows the all optimal trajectories computed for the game scenario.
+│   │   barrier.png                      - Depicts the scenario when game start from the barrier.
+│   │   barrier_sector.png               - The barrier scenario with sector-shaped capture range.
+│   │   opttraj.png                      - A depiction of the optimal trajectories with two defender and one intruder.
+│   │   traj_D_win.png                   - Illustrates a scenario where the defender win.
+│   │   traj_D_win_sector.png            - Defense win scenario with sector-shaped capture range.
+│   │   traj_I_win.png                   - Depicts a scenario where the intruder win.
+│   │   traj_I_win_sector.png            - Intruder win scenario with sector-shaped capture range.
+
 └───Matlab
-│   │   Block Diagram.png
-│   │   Block.m
-│   │   Block.slx
-│   │   Capture_Settings.png
-│   │   Defender_1_Subsystem.png
-│   │   Intruder_Subsystem.png
-│   │   Simulation_result.png
-│   │   Theta_1_Calculation.png
-│
+│   │   Block Diagram.png                - Visual layout of the simulation's block diagram.
+│   │   Block.m                          - MATLAB script for simulation.
+│   │   Block.slx                        - MATLAB Simulink file for running the simulation.
+│   │   Capture_Settings.png             - Settings for the capture mechanism in the simulation.
+│   │   Defender_1_Subsystem.png         - Detailed subsystem diagram for defender 1.
+│   │   Intruder_Subsystem.png           - Detailed subsystem diagram for the intruder.
+│   │   Simulation_result.png            - The result output of the simulation.
+│   │   Theta_1_Calculation.png          - Calculation process for the angle theta in the simulation.
+
 └───Python
-    │   animator.py
-    │   Config.py
-    │   envelope.py
-    │   one_plot.py
-    │   opttraj.py
-    │   overall_plot.py
-    │   RK4.py
-    │   Sector_Draw.py
-    │   traj_generator.py
-    │   vecgram.py
-    │
-    └───res
-        │   someData.csv
-        │   switch.csv
+    │   animator.py                      - Generates animations.
+    │   Config.py                        - Contains configuration settings for the simulation.
+    │   envelope.py                      - Define functions for generating trajectory plot.
+    │   one_plot.py                      - Generates a single plot of trajectory.
+    │   opttraj.py                       - Visualizes optimal trajectories with two defender and one intruder.
+    │   overall_plot.py                  - Produces a plot contains all optimal trajectories.
+    │   RK4.py                           - Implements the fourth-order Runge-Kutta method for numerical integration.
+    │   Sector_Draw.py                   - Adding sectors indicating defender range.
+    │   traj_generator.py                - Creates trajectories based on different initial position.
+    │   vecgram.py                       - Define functions for generating vectograms.
+    │   someData.csv                     - Data output from simulation runs for analysis 
+    │   switch.csv                       - Data defining switching strategies in the simulation
+    │   res                              - Data output from envelope_barrier from enevlope.py
+
 ```
 
 ## Python Simulation
@@ -90,10 +90,6 @@ This will execute the simulation, and the results can be visualized in MATLAB's 
 ## Figures
 
 The Figures directory contains various plots of the optimal trajectories, barriers, and winning scenarios for both the defender and the intruder. These images are generated from the Python scripts and represent key outcomes of the simulation.
-
-## Contributing
-
-Feel free to fork the repository and submit pull requests. For major changes, please open an issue first to discuss what you would like to change.
 
 ## Documentation
 
