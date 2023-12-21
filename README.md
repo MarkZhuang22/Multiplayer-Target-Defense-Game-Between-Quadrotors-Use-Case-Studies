@@ -4,7 +4,7 @@ This repository contains the Python and MATLAB simulation code for a Target Defe
 
 ## Repository Structure
 
-```
+```plaintext
 Thesis-research
 │   README.md
 │   .DS_Store    
@@ -44,7 +44,6 @@ Thesis-research
     └───res
         │   someData.csv
         │   switch.csv
-```
 
 ## Python Simulation
 
