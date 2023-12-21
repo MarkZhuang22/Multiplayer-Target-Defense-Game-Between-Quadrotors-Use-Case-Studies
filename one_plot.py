@@ -3,7 +3,7 @@ matplotlib.rc('xtick', labelsize=14)
 matplotlib.rc('ytick', labelsize=14)
 from matplotlib.patches import Wedge
 from envelope import *
-from overall_plot import triag_cnstr_3, triag_cnstr_2, triag_cnstr_1, plot_bds, plot_orbit
+from overall_plot import *
 import matplotlib.tri as tri
 from math import pi
 

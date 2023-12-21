@@ -3,7 +3,7 @@ matplotlib.rc('xtick', labelsize=14)
 matplotlib.rc('ytick', labelsize=14)
 from celluloid import Camera
 from envelope import *
-from overall_plot import triag_cnstr_3, triag_cnstr_2, triag_cnstr_1, plot_bds, plot_orbit
+from overall_plot import *
 import matplotlib.tri as tri
 
 if __name__ == '__main__':
@@ -11,10 +11,10 @@ if __name__ == '__main__':
     # Define initial conditions for the scenario (barrier case)
 	r1, r2 = 6.5, 6.54 # barrier
 	# resfig = [0, 15, 65, 89]
-	# r1, r2 = 6.5, 6.1 # iwin
+	# r1, r2 = 6.5, 6.1 # Intruder winning scenario
 	# resfig = [0, 20, 50, 56]
 	# resfig = [0, 50, 90, 105, 110, 195, 210, 230, 240, 1200]
-	# r1, r2 = 6.1, 6.6 # dwin
+	# r1, r2 = 6.1, 6.6 # Defender winning scenario
 	# resfig = [0, 50, 90, 105, 110, 195, 210, 230, 240, 1200]
 
     # Generate the trajectory, states, control angles, ratios, and time stamps for the given scenario

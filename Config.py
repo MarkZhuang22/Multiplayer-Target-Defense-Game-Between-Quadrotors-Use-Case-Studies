@@ -10,7 +10,7 @@ class Config(object):
     VD = 1.0             # Defender's velocity
     VI = 1.5             # Intruder's (invader's) velocity
     TAG_RANGE = 5.0      # Radius of the target area
-    SECTOR_ANGLE = pi/3  # example sector angle (60 degrees)
+    SECTOR_ANGLE = pi/3  # Sector angle (60 degrees)
     
     # Simulation parameters
     TIME_STEP = 0.1      # Time step for the simulation

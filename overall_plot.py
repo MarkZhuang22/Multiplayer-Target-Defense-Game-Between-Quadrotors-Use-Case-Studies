@@ -154,16 +154,6 @@ def plot_bds(ax, func, n=5, label=None):
 		r2s[i] = (func(r1))
 	ax.plot(r1s, r2s, 'k--', label=label)
 
-# seems not used
-def plot_orbit(ax):
-	ax.plot([rDcap_min, rDcap_max], [rIcap_min, rIcap_max], 'k--')
-
-# seems not used
-def solve_phi0_states(r1):
-
-	def get_phi(r2, r1=r1):
-		return get_phi_max(r1, r2)[0]
-
 # dashed blue lines in Figure 16
 def read_switchline():
 	"""
@@ -260,4 +250,5 @@ if __name__ == '__main__':
 	plt.xlabel(r'$\dot{\rho_D}$', fontsize=14)
 	plt.ylabel(r'$\dot{\rho_I}$', fontsize=14)
 	ax.legend(fontsize=12)
+	plt.savefig('Optimal trajectories.png')
 	plt.show()

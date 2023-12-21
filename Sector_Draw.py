@@ -2,15 +2,16 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Wedge
 from envelope import *
 from math import pi, atan2, degrees
+from Config import Config
+
+sector_angle = Config.SECTOR_ANGLE # sector angle of the defender
 
 # Set your initial conditions and parameters here
 # r1, r2 = 6.5, 6.54 # barrier
 
-r1, r2 = 6.5, 6.1 # Intruder winning scenario
+# r1, r2 = 6.5, 6.1 # Intruder winning scenario
 
-# r1, r2 = 6.1, 6.6 # Defender winning scenario
-
-sector_angle = pi / 3  # 60 degrees in radians
+r1, r2 = 6.1, 6.6 # Defender winning scenario
 
 # Generate the trajectories
 traj, ss, phis, rrs, ts = envelope_barrier(r1, r2)

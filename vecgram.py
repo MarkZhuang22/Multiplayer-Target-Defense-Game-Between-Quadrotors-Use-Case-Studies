@@ -24,7 +24,6 @@ r = Config.CAP_RANGE # capture radius of the defender
 R = Config.TAG_RANGE # radius of the target area
 vd = Config.VD       # defender's velocity
 vi = Config.VI       # invader's velocity
-Sector_theta = Config.SECTOR_ANGLE
 gmm = acos(vd / vi)  
  
 '''
@@ -36,7 +35,6 @@ for more details, please refer to Equations (23) (24) (27)
 '''
 rIcap_min, rIcap_max = r / (sin(gmm)), r / (1 - cos(gmm))
 rDcap_min, rDcap_max = rIcap_min * (vd / vi), rIcap_max * (vd / vi)
-
 
 
 ''' 

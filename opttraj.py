@@ -1,5 +1,5 @@
 from envelope import *
-from overall_plot import triag_cnstr_3, triag_cnstr_2, triag_cnstr_1, plot_bds, plot_orbit
+from overall_plot import *
 
 
 
@@ -69,5 +69,5 @@ if __name__ == '__main__':
 	ax.grid()
 	ax.axis('equal')
 	ax.legend(fontsize=14)
-	plt.savefig('traj.png')
+	plt.savefig('opttraj.png')
 	plt.show()

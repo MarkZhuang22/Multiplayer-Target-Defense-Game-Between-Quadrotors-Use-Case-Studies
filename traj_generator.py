@@ -12,7 +12,7 @@ for r0 in r0s:
     for r1 in np.linspace(r1l+0.1, r1u-0.1, 13):
         r2 = r0 - r1  # Calculate r2 based on r1 and r0
 
-        # Ensure that the computed r1 and r2 are valid for the game's geometry
+        # Ensure that the computed r1 and r2 are valid for the game's geometry (see equation (19))
         if abs((r1**2 + r2**2 - r**2)/(2*r1*r2)) < 1:
             print('new plot')
             # Generate the trajectory and related data for given r1 and r2
