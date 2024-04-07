@@ -7,27 +7,21 @@ This repository contains the Python and MATLAB simulation code for a Target Defe
 ```plaintext
 Thesis-research
 │   README.md                            - Main documentation file explaining the repository content.
-│   .DS_Store                            - macOS folder settings file, usually hidden in the directory.
-
-└───Figure
-│   │   OptimalTrajectories.png          - Shows the all optimal trajectories computed for the game scenario.
-│   │   barrier.png                      - Depicts the scenario when game start from the barrier.
-│   │   barrier_sector.png               - The barrier scenario with sector-shaped capture range.
-│   │   opttraj.png                      - A depiction of the optimal trajectories with two defender and one intruder.
-│   │   traj_D_win.png                   - Illustrates a scenario where the defender win.
-│   │   traj_D_win_sector.png            - Defense win scenario with sector-shaped capture range.
-│   │   traj_I_win.png                   - Depicts a scenario where the intruder win.
-│   │   traj_I_win_sector.png            - Intruder win scenario with sector-shaped capture range.
+│   Thesis_Final_Report.pdf              - The final report document for the thesis.
+│   Thesis_Presentation.pdf              - Presentation slides for the thesis.
 
 └───Matlab
-│   │   Block Diagram.png                - Visual layout of the simulation's block diagram.
-│   │   Block.m                          - MATLAB script for simulation.
-│   │   Block.slx                        - MATLAB Simulink file for running the simulation.
-│   │   Capture_Settings.png             - Settings for the capture mechanism in the simulation.
-│   │   Defender_1_Subsystem.png         - Detailed subsystem diagram for defender 1.
-│   │   Intruder_Subsystem.png           - Detailed subsystem diagram for the intruder.
-│   │   Simulation_result.png            - The result output of the simulation.
-│   │   Theta_1_Calculation.png          - Calculation process for the angle theta in the simulation.
+    │   Animation                        - Contains animation scripts for visualizing the simulation.
+    │   Block_Diagram                    - Diagrams showing the block-based structure of the MATLAB simulation.
+    │   Illustration                     - Illustrative figures representing simulation concepts.
+    │   Monte_Carlo_Data                 - Data from Monte Carlo simulations.
+    │   Simulink                         - Simulink models for the MATLAB-based simulation.
+    │   Trajectory                       - Plots related to the trajectory.
+    │   BaseModel.m                      - MATLAB script for the base model of the simulation.
+    │   Model_APF.m                      - MATLAB script implementing the Artifical Potential Field model.
+    │   Model_PNG.m                      - MATLAB script for Proportional Navigation Guidance (PNG) model.
+    │   Monte_Carlo.m                    - Script for running Monte Carlo simulations.
+    │   Prediction_Interception.m        - Script for predicting interception method.
 
 └───Python
     │   animator.py                      - Generates animations.
@@ -70,7 +64,7 @@ This will execute the simulation and save trajectory plots in the Figures direct
 
 ## MATLAB Simulation
 
-MATLAB code provides a block diagram-based simulation environment where the dynamics of the defenders and the intruder are modeled and simulated over time.
+The MATLAB simulation utilizes a block diagram approach to model the dynamics of the game, simulating the movements of the defenders and the intruder over time.
 
 ### MATLAB Version
 
@@ -78,19 +72,16 @@ MATLAB code provides a block diagram-based simulation environment where the dyna
 
 ### Running the Simulation
 
-Open MATLAB, navigate to the Matlab directory, and run the simulation script:
+In MATLAB, navigate to the Matlab directory and open the desired model or script:
 
 ```matlab
 cd Matlab
-Block.slx
+open('BaseModel.m')
 ```
 
 This will execute the simulation, and the results can be visualized in MATLAB's Simulink environment.
 
-## Figures
-
-The Figures directory contains various plots of the optimal trajectories, barriers, and winning scenarios for both the defender and the intruder. These images are generated from the Python scripts and represent key outcomes of the simulation.
-
 ## Documentation
-
+The 'Thesis_Final_Report.pdf' provides a comprehensive report on the entire project, detailing the research, methodology, and findings.
+The 'Thesis_Presentation.pdf' contains the slides used during the thesis defense, offering a succinct overview of the project.
 [report](https://www.overleaf.com/project/652b96096ece88dceaee7601)
