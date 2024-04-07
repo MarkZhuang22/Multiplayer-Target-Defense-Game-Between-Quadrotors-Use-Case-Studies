@@ -1,6 +1,6 @@
-# Target Defense Game Simulation
+# Final Year Thesis: Multiplayer Target Defense Game Between Quadrotors: Use Case Studies
 
-This repository contains the Python and MATLAB simulation code for a Target Defense Game with two defenders and a faster intruder, as part of thesis research work.
+This repository hosts the Python and MATLAB simulation code for my final year thesis titled "Multiplayer Target Defense Game Between Quadrotors: Use Case Studies". It explores a defense game scenario with two defenders and a faster intruder drone, with annotated code and organization derived from Dr. Fu's paper "Optimal Solution of a Target Defense Game with Two defenders and a Faster Intruder".
 
 ## Repository Structure
 
